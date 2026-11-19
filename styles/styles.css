@@ -12,10 +12,14 @@
 nav {
     background-color: var(--primary-color);
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
+    text-decoration: none;
     display: block;
     padding: 20px;
 }
@@ -23,6 +27,8 @@ nav a {
 h1 {
     color: var(--primary-color);
     padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: var(--border);
 }
 
 main img {
@@ -37,6 +43,7 @@ main img {
 main {
     max-width: 840px;
     margin: 1rem;
+    grid-column: 2/3;
 }
 
 aside {
@@ -44,6 +51,8 @@ aside {
     position: relative;
     width: 20rem;
     text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -67,6 +76,13 @@ footer {
     text-align: center;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 /* Class Selectors */
 
 .box {
@@ -79,4 +95,10 @@ footer {
 
 .indent {
     padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
 }
