@@ -1,6 +1,5 @@
 :root {
     --primary-color: #9A488D;
-    --secondary-color: #c9a35e;
     --accent1-color: #333;
     --accent2-color: #2e3e5f;
     --heading-font: Verdana,
@@ -11,6 +10,8 @@
         'Times New Roman',
         Times,
         serif;
+    --border: 1px solid #333;
+    --alt-text-color: #fff;
 }
 
 * {
@@ -70,7 +71,7 @@ nav ul {
 
 nav ul li {
     padding: .2rem 2rem;
-    border: 1px solid black;
+    border: var(--border);
 }
 
 .socialmedia a {
@@ -93,7 +94,7 @@ h1 {
     text-align: center;
     padding: 16px;
     width: 100%;
-    color: #fff;
+    color: var(--alt-text-color);
 }
 
 footer {
@@ -111,8 +112,8 @@ footer nav {
     position: absolute;
     bottom: 5px;
     background-color: var(--accent2-color);
-    border: 1px solid black;
-    color: #fff;
+    border: var(--border);
+    color: var(--alt-text-color);
 }
 
 .hero article img {
